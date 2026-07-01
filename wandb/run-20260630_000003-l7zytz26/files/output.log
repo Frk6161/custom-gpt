@@ -1,0 +1,48 @@
+Modell auf cuda geladen.
+loaded 338025 tokens from input.txt
+loaded 338025 tokens from input.txt
+loaded 36059 tokens from val.txt
+W0630 00:00:17.333000 10920 /system/conda/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/_inductor/utils.py:1436] [2/0] Not enough SMs to use max_autotune_gemm mode
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/custom-llm/train.py", line 150, in <module>
+    logits, loss = model(x, y)
+                   ^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 375, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 736, in compile_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/custom-llm/model.py", line 71, in forward
+    x = block(x)
+        ^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/custom-llm/model.py", line 40, in forward
+    x = x + self.mlp(self.ln_2(x))
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/nn/modules/module.py", line 399, in _forward_unimplemented
+    raise NotImplementedError(
+NotImplementedError: Module [MLP] is missing the required "forward" function

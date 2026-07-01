@@ -1,0 +1,28 @@
+{
+  "os": "Linux-6.8.0-111-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.12.11",
+  "startedAt": "2026-06-29T23:53:56.578453Z",
+  "program": "/teamspace/studios/this_studio/custom-llm/train.py",
+  "codePath": "train.py",
+  "codePathLocal": "train.py",
+  "git": {
+    "remote": "https://github.com/Frk6161/custom-gpt",
+    "commit": "c0442f2ff5250b84e87f5d13eff93d5070b583fb"
+  },
+  "email": "farukkefeliogl@gmail.com",
+  "root": "/teamspace/studios/this_studio/custom-llm",
+  "host": "vm-1782775842739092570",
+  "executable": "/home/zeus/miniconda3/envs/cloudspace/bin/python",
+  "cpu_count": 4,
+  "cpu_count_logical": 4,
+  "disk": {
+    "/": {
+      "total": "414921494528",
+      "used": "36961255424"
+    }
+  },
+  "memory": {
+    "total": "15713271808"
+  },
+  "writerId": "s7mwnjfchd4z7pda0p93tue2mql4ac3l"
+}

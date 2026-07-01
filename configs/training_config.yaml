@@ -1,0 +1,18 @@
+total_batch_size: 524288
+micro_batch_size: 8
+sequence_length: 1024
+grad_accum_steps: 128    # wird automatisch korrigiert
+max_steps: 50
+warmup_steps: 10
+max_lr: 6.0e-4
+min_lr_factor: 0.1
+weight_decay: 0.1
+grad_clip: 1.0
+dtype: "float16"
+compile_model: true
+
+log_every: 10          # Logge Trainingsmetriken alle N Steps
+val_every: 25          # Validiere alle N Steps (wenn Val.-Daten da)
+val_samples: 5         # Anzahl der Validierungsbatches
+log_gpu_mem: true      # GPU Speicher loggen (kann overhead haben)
+ 

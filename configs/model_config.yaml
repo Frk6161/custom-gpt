@@ -1,0 +1,18 @@
+block_size: 1024
+vocab_size: 50304
+n_layer: 12
+n_head: 12
+n_embd: 768
+head_config:
+  - type: full
+    heads: 6
+    param: null
+  - type: window
+    heads: 3
+    param: 64
+  - type: dilated
+    heads: 3
+    param: [64, 2]
+swiglu: true
+qk_norm: true
+rope: true

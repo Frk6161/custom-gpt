@@ -1,0 +1,57 @@
+Modell auf cuda geladen.
+loaded 338025 tokens from input.txt
+loaded 338025 tokens from input.txt
+loaded 36059 tokens from val.txt
+W0630 22:53:02.533000 55183 /system/conda/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/_inductor/utils.py:1436] [0/0] Not enough SMs to use max_autotune_gemm mode
+step 0, loss: 10.9929, lr 6.0000e-05, norm: 10.0512, dt: 82206.22ms, tok/sec: 6378, MFU: 5.7%
+step 1, loss: 9.8717, lr 1.2000e-04, norm: 10.1256, dt: 28024.84ms, tok/sec: 18708, MFU: 16.8%
+step 2, loss: 9.3825, lr 1.8000e-04, norm: 2.9375, dt: 28346.02ms, tok/sec: 18496, MFU: 16.6%
+step 3, loss: 9.0564, lr 2.4000e-04, norm: 2.7630, dt: 28473.62ms, tok/sec: 18413, MFU: 16.5%
+step 4, loss: 8.8445, lr 3.0000e-04, norm: 2.8491, dt: 28550.90ms, tok/sec: 18363, MFU: 16.5%
+step 5, loss: 8.6040, lr 3.6000e-04, norm: 2.1640, dt: 28531.35ms, tok/sec: 18376, MFU: 16.5%
+step 6, loss: 8.3659, lr 4.2000e-04, norm: 2.3201, dt: 29004.81ms, tok/sec: 18076, MFU: 16.2%
+step 7, loss: 8.0820, lr 4.8000e-04, norm: 2.0950, dt: 28538.73ms, tok/sec: 18371, MFU: 16.5%
+step 8, loss: 7.7445, lr 5.4000e-04, norm: 1.6361, dt: 28534.06ms, tok/sec: 18374, MFU: 16.5%
+step 9, loss: 7.3928, lr 6.0000e-04, norm: 2.1977, dt: 28556.43ms, tok/sec: 18360, MFU: 16.5%
+step 10, loss: 7.0795, lr 6.0000e-04, norm: 2.5167, dt: 28525.91ms, tok/sec: 18379, MFU: 16.5%
+step 11, loss: 6.7787, lr 5.9917e-04, norm: 1.6407, dt: 28551.32ms, tok/sec: 18363, MFU: 16.5%
+step 12, loss: 6.5269, lr 5.9668e-04, norm: 1.0225, dt: 28530.85ms, tok/sec: 18376, MFU: 16.5%
+step 13, loss: 6.3723, lr 5.9254e-04, norm: 0.9337, dt: 28533.76ms, tok/sec: 18374, MFU: 16.5%
+step 14, loss: 6.2088, lr 5.8679e-04, norm: 1.3854, dt: 28550.44ms, tok/sec: 18364, MFU: 16.5%
+step 15, loss: 6.1706, lr 5.7945e-04, norm: 2.5918, dt: 28533.10ms, tok/sec: 18375, MFU: 16.5%
+step 16, loss: 6.1048, lr 5.7057e-04, norm: 1.7798, dt: 28553.88ms, tok/sec: 18361, MFU: 16.5%
+step 17, loss: 5.9892, lr 5.6021e-04, norm: 1.5472, dt: 28522.72ms, tok/sec: 18381, MFU: 16.5%
+step 18, loss: 5.9708, lr 5.4843e-04, norm: 2.8961, dt: 28542.66ms, tok/sec: 18369, MFU: 16.5%
+step 19, loss: 5.8508, lr 5.3531e-04, norm: 1.6977, dt: 28541.87ms, tok/sec: 18369, MFU: 16.5%
+step 20, loss: 5.7896, lr 5.2092e-04, norm: 1.5441, dt: 28614.76ms, tok/sec: 18322, MFU: 16.5%
+step 21, loss: 5.7842, lr 5.0535e-04, norm: 3.4329, dt: 28649.11ms, tok/sec: 18300, MFU: 16.4%
+step 22, loss: 5.6237, lr 4.8870e-04, norm: 1.3057, dt: 28544.46ms, tok/sec: 18367, MFU: 16.5%
+step 23, loss: 5.5491, lr 4.7107e-04, norm: 1.5593, dt: 28714.13ms, tok/sec: 18259, MFU: 16.4%
+step 24, loss: 5.4235, lr 4.5258e-04, norm: 0.7736, dt: 28556.61ms, tok/sec: 18360, MFU: 16.5%
+step 25, loss: 5.3812, lr 4.3332e-04, norm: 1.0731, dt: 28582.59ms, tok/sec: 18343, MFU: 16.5%
+step   25 | validation loss 5.2512
+step 26, loss: 5.3151, lr 4.1343e-04, norm: 0.8624, dt: 28257.04ms, tok/sec: 18554, MFU: 16.7%
+step 27, loss: 5.2722, lr 3.9303e-04, norm: 0.5510, dt: 28516.45ms, tok/sec: 18385, MFU: 16.5%
+step 28, loss: 5.1999, lr 3.7224e-04, norm: 0.6612, dt: 28528.42ms, tok/sec: 18378, MFU: 16.5%
+step 29, loss: 5.1866, lr 3.5118e-04, norm: 0.5321, dt: 28569.18ms, tok/sec: 18352, MFU: 16.5%
+step 30, loss: 5.1294, lr 3.3000e-04, norm: 1.1529, dt: 28546.62ms, tok/sec: 18366, MFU: 16.5%
+step 31, loss: 5.1211, lr 3.0882e-04, norm: 0.9805, dt: 28671.62ms, tok/sec: 18286, MFU: 16.4%
+step 32, loss: 5.0538, lr 2.8776e-04, norm: 0.5452, dt: 28560.48ms, tok/sec: 18357, MFU: 16.5%
+step 33, loss: 5.0190, lr 2.6697e-04, norm: 0.8127, dt: 28564.32ms, tok/sec: 18355, MFU: 16.5%
+step 34, loss: 4.9793, lr 2.4657e-04, norm: 0.7746, dt: 28662.55ms, tok/sec: 18292, MFU: 16.4%
+step 35, loss: 4.9125, lr 2.2668e-04, norm: 0.6529, dt: 28950.49ms, tok/sec: 18110, MFU: 16.3%
+step 36, loss: 4.9016, lr 2.0742e-04, norm: 0.7299, dt: 28808.14ms, tok/sec: 18199, MFU: 16.3%
+step 37, loss: 4.8144, lr 1.8893e-04, norm: 0.6862, dt: 28803.18ms, tok/sec: 18202, MFU: 16.3%
+step 38, loss: 4.7812, lr 1.7130e-04, norm: 0.6117, dt: 28876.59ms, tok/sec: 18156, MFU: 16.3%
+step 39, loss: 4.7204, lr 1.5465e-04, norm: 1.3646, dt: 29035.11ms, tok/sec: 18057, MFU: 16.2%
+step 40, loss: 4.6974, lr 1.3908e-04, norm: 1.9572, dt: 29661.83ms, tok/sec: 17676, MFU: 15.9%
+step 41, loss: 4.6299, lr 1.2469e-04, norm: 0.9865, dt: 28887.35ms, tok/sec: 18149, MFU: 16.3%
+step 42, loss: 4.6081, lr 1.1157e-04, norm: 3.0754, dt: 28927.91ms, tok/sec: 18124, MFU: 16.3%
+step 43, loss: 4.5697, lr 9.9787e-05, norm: 2.1373, dt: 28971.04ms, tok/sec: 18097, MFU: 16.3%
+step 44, loss: 4.4749, lr 8.9428e-05, norm: 1.5088, dt: 29145.73ms, tok/sec: 17988, MFU: 16.2%
+step 45, loss: 4.4800, lr 8.0553e-05, norm: 1.5404, dt: 29064.27ms, tok/sec: 18039, MFU: 16.2%
+step 46, loss: 4.4064, lr 7.3215e-05, norm: 0.9648, dt: 28916.60ms, tok/sec: 18131, MFU: 16.3%
+step 47, loss: 4.3774, lr 6.7460e-05, norm: 1.2136, dt: 28985.11ms, tok/sec: 18088, MFU: 16.2%
+step 48, loss: 4.3401, lr 6.3324e-05, norm: 1.1143, dt: 29191.14ms, tok/sec: 17961, MFU: 16.1%
+step 49, loss: 4.3064, lr 6.0832e-05, norm: 0.9208, dt: 29171.53ms, tok/sec: 17973, MFU: 16.1%
+Training abgeschlossen.

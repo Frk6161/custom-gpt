@@ -1,0 +1,25 @@
+Modell auf cuda geladen.
+loaded 338025 tokens from input.txt
+loaded 338025 tokens from input.txt
+loaded 36059 tokens from val.txt
+W0630 22:30:09.755000 4891 /system/conda/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/_inductor/utils.py:1436] [0/0] Not enough SMs to use max_autotune_gemm mode
+step 0, loss: 10.9108, lr 6.0000e-05, norm: 11.6300, dt: 78980.63ms, tok/sec: 6638, MFU: 6.0%
+step 1, loss: 9.6713, lr 1.2000e-04, norm: 6.9374, dt: 26461.68ms, tok/sec: 19813, MFU: 17.8%
+step 2, loss: 9.4322, lr 1.8000e-04, norm: 5.8510, dt: 26696.43ms, tok/sec: 19639, MFU: 17.6%
+step 3, loss: 9.0793, lr 2.4000e-04, norm: 3.2384, dt: 26861.09ms, tok/sec: 19518, MFU: 17.5%
+step 4, loss: 8.8751, lr 3.0000e-04, norm: 3.3711, dt: 26952.90ms, tok/sec: 19452, MFU: 17.5%
+step 5, loss: 8.5754, lr 3.6000e-04, norm: 2.5745, dt: 26933.44ms, tok/sec: 19466, MFU: 17.5%
+step 6, loss: 8.3763, lr 4.2000e-04, norm: 2.5098, dt: 26924.13ms, tok/sec: 19473, MFU: 17.5%
+step 7, loss: 8.1014, lr 4.8000e-04, norm: 2.6700, dt: 26893.55ms, tok/sec: 19495, MFU: 17.5%
+step 8, loss: 7.7932, lr 5.4000e-04, norm: 2.4805, dt: 26788.70ms, tok/sec: 19571, MFU: 17.6%
+step 9, loss: 7.4505, lr 6.0000e-04, norm: 1.5592, dt: 26715.95ms, tok/sec: 19625, MFU: 17.6%
+step 10, loss: 7.1152, lr 6.0000e-04, norm: 1.4382, dt: 26657.50ms, tok/sec: 19668, MFU: 17.7%
+step 11, loss: 6.8487, lr 5.9917e-04, norm: 1.7860, dt: 26650.57ms, tok/sec: 19673, MFU: 17.7%
+step 12, loss: 6.6020, lr 5.9668e-04, norm: 1.4860, dt: 26721.97ms, tok/sec: 19620, MFU: 17.6%
+step 13, loss: 6.4593, lr 5.9254e-04, norm: 1.6542, dt: 26841.28ms, tok/sec: 19533, MFU: 17.5%
+step 14, loss: 6.3132, lr 5.8679e-04, norm: 0.5690, dt: 26883.86ms, tok/sec: 19502, MFU: 17.5%
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/custom-llm/train.py", line 148, in <module>
+    x, y = x.to(device), y.to(device)
+           ^^^^^^^^^^^^
+KeyboardInterrupt

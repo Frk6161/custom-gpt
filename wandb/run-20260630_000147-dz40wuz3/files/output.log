@@ -1,0 +1,48 @@
+Modell auf cuda geladen.
+loaded 338025 tokens from input.txt
+loaded 338025 tokens from input.txt
+loaded 36059 tokens from val.txt
+W0630 00:02:15.133000 16226 /system/conda/miniconda3/envs/cloudspace/lib/python3.12/site-packages/torch/_inductor/utils.py:1436] [0/0] Not enough SMs to use max_autotune_gemm mode
+step 0, loss: 11.0182, lr 6.0000e-05, norm: 11.2896, dt: 76029.06ms, tok/sec: 6896, MFU: 6.2%
+step 1, loss: 9.9007, lr 1.2000e-04, norm: 11.5178, dt: 27238.41ms, tok/sec: 19248, MFU: 17.3%
+step 2, loss: 9.3470, lr 1.8000e-04, norm: 2.9688, dt: 27541.08ms, tok/sec: 19037, MFU: 17.1%
+step 3, loss: 9.0217, lr 2.4000e-04, norm: 2.3171, dt: 27643.91ms, tok/sec: 18966, MFU: 17.0%
+step 4, loss: 8.8281, lr 3.0000e-04, norm: 2.8532, dt: 27812.13ms, tok/sec: 18851, MFU: 16.9%
+step 5, loss: 8.5946, lr 3.6000e-04, norm: 2.1711, dt: 27875.84ms, tok/sec: 18808, MFU: 16.9%
+step 6, loss: 8.3649, lr 4.2000e-04, norm: 2.4166, dt: 27719.51ms, tok/sec: 18914, MFU: 17.0%
+step 7, loss: 8.0887, lr 4.8000e-04, norm: 1.9072, dt: 27254.06ms, tok/sec: 19237, MFU: 17.3%
+step 8, loss: 7.7619, lr 5.4000e-04, norm: 1.5576, dt: 27272.34ms, tok/sec: 19224, MFU: 17.3%
+step 9, loss: 7.4372, lr 6.0000e-04, norm: 2.1620, dt: 27247.80ms, tok/sec: 19241, MFU: 17.3%
+step 10, loss: 7.0751, lr 6.0000e-04, norm: 1.3135, dt: 27279.16ms, tok/sec: 19219, MFU: 17.3%
+step 11, loss: 6.7802, lr 5.9917e-04, norm: 1.1113, dt: 27347.08ms, tok/sec: 19172, MFU: 17.2%
+step 12, loss: 6.5852, lr 5.9668e-04, norm: 1.7179, dt: 27415.58ms, tok/sec: 19124, MFU: 17.2%
+step 13, loss: 6.5549, lr 5.9254e-04, norm: 3.8128, dt: 27383.81ms, tok/sec: 19146, MFU: 17.2%
+step 14, loss: 6.3226, lr 5.8679e-04, norm: 1.3131, dt: 27238.70ms, tok/sec: 19248, MFU: 17.3%
+step 15, loss: 6.3167, lr 5.7945e-04, norm: 1.9794, dt: 27247.68ms, tok/sec: 19242, MFU: 17.3%
+step 16, loss: 6.2831, lr 5.7057e-04, norm: 1.9612, dt: 27216.58ms, tok/sec: 19264, MFU: 17.3%
+step 17, loss: 6.2148, lr 5.6021e-04, norm: 0.9475, dt: 27227.81ms, tok/sec: 19256, MFU: 17.3%
+step 18, loss: 6.1981, lr 5.4843e-04, norm: 1.5015, dt: 27239.05ms, tok/sec: 19248, MFU: 17.3%
+step 19, loss: 6.1371, lr 5.3531e-04, norm: 0.6558, dt: 27247.07ms, tok/sec: 19242, MFU: 17.3%
+step 20, loss: 6.1374, lr 5.2092e-04, norm: 0.9954, dt: 27283.62ms, tok/sec: 19216, MFU: 17.3%
+step 21, loss: 6.0568, lr 5.0535e-04, norm: 0.7152, dt: 27339.41ms, tok/sec: 19177, MFU: 17.2%
+step 22, loss: 6.0184, lr 4.8870e-04, norm: 0.7143, dt: 27413.20ms, tok/sec: 19125, MFU: 17.2%
+step 23, loss: 5.9630, lr 4.7107e-04, norm: 0.8877, dt: 27426.01ms, tok/sec: 19116, MFU: 17.2%
+step 24, loss: 5.8963, lr 4.5258e-04, norm: 0.9199, dt: 27511.91ms, tok/sec: 19057, MFU: 17.1%
+step 25, loss: 5.8415, lr 4.3332e-04, norm: 0.5414, dt: 27439.42ms, tok/sec: 19107, MFU: 17.2%
+step   25 | validation loss 5.7070
+step 26, loss: 5.7730, lr 4.1343e-04, norm: 0.6920, dt: 27256.83ms, tok/sec: 19235, MFU: 17.3%
+step 27, loss: 5.7243, lr 3.9303e-04, norm: 0.8834, dt: 27685.83ms, tok/sec: 18937, MFU: 17.0%
+step 28, loss: 5.6221, lr 3.7224e-04, norm: 0.8899, dt: 27935.51ms, tok/sec: 18768, MFU: 16.9%
+step 29, loss: 5.5782, lr 3.5118e-04, norm: 0.9633, dt: 27786.69ms, tok/sec: 18868, MFU: 16.9%
+step 30, loss: 5.4865, lr 3.3000e-04, norm: 0.6249, dt: 27759.03ms, tok/sec: 18887, MFU: 17.0%
+step 31, loss: 5.4488, lr 3.0882e-04, norm: 0.7890, dt: 27726.53ms, tok/sec: 18909, MFU: 17.0%
+step 32, loss: 5.4764, lr 2.8776e-04, norm: 2.8678, dt: 27917.04ms, tok/sec: 18780, MFU: 16.9%
+step 33, loss: 5.3619, lr 2.6697e-04, norm: 0.9947, dt: 27753.57ms, tok/sec: 18891, MFU: 17.0%
+step 34, loss: 5.3301, lr 2.4657e-04, norm: 0.6748, dt: 27742.38ms, tok/sec: 18898, MFU: 17.0%
+step 35, loss: 5.2782, lr 2.2668e-04, norm: 0.6452, dt: 27819.59ms, tok/sec: 18846, MFU: 16.9%
+step 36, loss: 5.2689, lr 2.0742e-04, norm: 0.6539, dt: 27832.98ms, tok/sec: 18837, MFU: 16.9%
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/custom-llm/train.py", line 148, in <module>
+    x, y = x.to(device), y.to(device)
+           ^^^^^^^^^^^^
+KeyboardInterrupt

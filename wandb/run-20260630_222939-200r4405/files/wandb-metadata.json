@@ -1,0 +1,40 @@
+{
+  "os": "Linux-6.8.0-1058-aws-x86_64-with-glibc2.39",
+  "python": "CPython 3.12.11",
+  "startedAt": "2026-06-30T22:29:39.744156Z",
+  "program": "/teamspace/studios/this_studio/custom-llm/train.py",
+  "codePath": "train.py",
+  "codePathLocal": "train.py",
+  "git": {
+    "remote": "https://github.com/Frk6161/custom-gpt",
+    "commit": "c0442f2ff5250b84e87f5d13eff93d5070b583fb"
+  },
+  "email": "farukkefeliogl@gmail.com",
+  "root": "/teamspace/studios/this_studio/custom-llm",
+  "host": "ip-10-192-11-216",
+  "executable": "/home/zeus/miniconda3/envs/cloudspace/bin/python",
+  "cpu_count": 2,
+  "cpu_count_logical": 4,
+  "gpu": "Tesla T4",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "244936478720",
+      "used": "17207611392"
+    }
+  },
+  "memory": {
+    "total": "16554934272"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla T4",
+      "memoryTotal": "16106127360",
+      "cudaCores": 2560,
+      "architecture": "Turing",
+      "uuid": "GPU-3b4597ad-dca8-2b32-4ba7-3fe810f2fd58"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "3ok1n12u8ow8xfwg2ycrwboqdq33b2z0"
+}

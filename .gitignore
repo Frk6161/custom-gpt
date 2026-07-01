@@ -1,0 +1,9 @@
+.vscode-server/
+.cursor-server/
+.windsurf-server/
+.wget-hsts
+*.pt
+*.pth
+__pycache__/
+train.txt
+val.txt
