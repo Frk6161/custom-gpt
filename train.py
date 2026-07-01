@@ -146,7 +146,7 @@ for step in range(start_step, max_steps):
         x, y = train_loader.next_batch()
         x, y = x.to(device), y.to(device)
         with torch.amp.autocast('cuda', dtype=amp_dtype, enabled=(scaler is not None)):
-            logits, loss = model(x, y)
+            logits, loss, _ = model(x, y)
         loss = loss / train_cfg.grad_accum_steps
         loss_accum += loss.detach()
         if scaler:

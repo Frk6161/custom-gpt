@@ -73,7 +73,7 @@ class CausalSelfAttention(nn.Module):
         self.register_buffer("bias", torch.tril(torch.ones(config.block_size, config.block_size))
                              .view(1, 1, config.block_size, config.block_size))
 
-    def forward(self, x):
+    def forward(self, x, kv_cache=None):
         B, T, C = x.size()
         qkv = self.c_attn(x)
         q, k, v = qkv.split(self.n_embd, dim=-1)
@@ -105,6 +105,14 @@ class CausalSelfAttention(nn.Module):
                 # out = att @ v_slice
                 out = F.scaled_dot_product_attention(q_slice, k_slice, v_slice, is_causal=True)
                 outputs.append(out)
+                # KV-Cache: anhängen falls vorhanden
+                new_cache = {}
+                if kv_cache is not None:
+                    if 'k' in kv_cache:
+                        k = torch.cat([kv_cache['k'], k], dim=2)
+                        v = torch.cat([kv_cache['v'], v], dim=2)
+                new_cache['k'] = k
+                new_cache['v'] = v
 
             elif typ == "window":
                 win_size = param
@@ -153,4 +161,6 @@ class CausalSelfAttention(nn.Module):
         y = torch.cat(outputs, dim=1)
         y = y.transpose(1, 2).contiguous().view(B, T, C)
         y = self.c_proj(y)
-        return y
+        return y, new_cache
+
+

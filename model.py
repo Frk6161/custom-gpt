@@ -35,10 +35,11 @@ class Block(nn.Module):
         self.ln_2 = nn.LayerNorm(config.n_embd)
         self.mlp  = MLP(config)   # MLP liest config.swiglu intern
 
-    def forward(self, x):
-        x = x + self.attn(self.ln_1(x))
+    def forward(self, x, kv_cache=None):
+        attn_out, new_cache = self.attn(self.ln_1(x), kv_cache=kv_cache)
+        x = x + attn_out
         x = x + self.mlp(self.ln_2(x))
-        return x
+        return x, new_cache
 
 
 class GPT(nn.Module):
@@ -57,7 +58,7 @@ class GPT(nn.Module):
         self.transformer.wte.weight = self.lm_head.weight
         self.apply(self._init_weights)
 
-    def forward(self, idx, targets=None):
+    def forward(self, idx, targets=None, kv_cache=None):
         B, T = idx.size()
         assert T <= self.config.block_size, f"Sequence length {T} exceeds block size {self.config.block_size}"
         tok_emb = self.transformer.wte(idx)
@@ -67,14 +68,17 @@ class GPT(nn.Module):
             pos = torch.arange(0, T, dtype=torch.long, device=idx.device)
             pos_emb = self.transformer.wpe(pos)
             x = tok_emb + pos_emb
-        for block in self.transformer.h:
-            x = block(x)
+        new_caches = []
+        for i, block in enumerate(self.transformer.h):
+            cache_i = kv_cache[i] if kv_cache is not None else None
+            x, new_cache = block(x, kv_cache=cache_i)
+            new_caches.append(new_cache)
         x = self.transformer.ln_f(x)
         logits = self.lm_head(x)
         loss = None
         if targets is not None:
             loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1))
-        return logits, loss
+        return logits, loss, new_caches
 
     def _init_weights(self, module):
         if isinstance(module, nn.Linear):
