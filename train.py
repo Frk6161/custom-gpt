@@ -63,7 +63,7 @@ def validate(model, val_loader, device, num_batches=5):
         x, y = val_loader.next_batch()
         x, y = x.to(device), y.to(device)
         with torch.amp.autocast('cuda', dtype=amp_dtype, enabled=(scaler is not None)):
-            _, loss = model(x, y)
+            _, loss, _ = model(x, y)
         total_loss += loss.item()
     model.train()
     return total_loss / num_batches
